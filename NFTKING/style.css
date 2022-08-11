@@ -1,9 +1,107 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
 .body{
     background-color: black;
-    width: 1440px;
-    height: 4781px;
-    margin-right: auto;
-    margin-left: auto;
+    max-width: 1440px;
+    max-height: 4781px;
     padding-top: 26px;
     padding-left: 80px;
     padding-right: 80px;
@@ -19,37 +117,18 @@
 
 .navbar{
     display: flex;
+    margin-top: 26px;
 }
 
-.menu{
+.link-container{
     display: flex;
-    margin-top: 35px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
 }
 
-.logo{
-    margin-left: 289px;
-    margin-top: 26px;
-    text-decoration: none;
-    font-family: 'GT Walsheim Pro';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27.05px;
-    line-height: 31px;
-    letter-spacing: -0.025em;
-    color: #FFFFFF;
-}
-
-.marketplace{
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'League Spartan';
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 400;
-}
-
-.creators, .community{
+.link-container__text{
     text-decoration: none;
     color: #ffffff;
     padding-left: 10px;
@@ -59,31 +138,37 @@
     font-weight: 400;
 }
 
-.title{
-    margin-top: 33px;
+.logo{
     margin-left: 289px;
     text-decoration: none;
-    color: #ffffff;
-    font-family: 'League Spartan';
-    font-size: 27px;
-    line-height: 31px;
+    font-family: 'GT Walsheim Pro';
+    font-style: normal;
     font-weight: 700;
+    font-size: 27.05px;
+    line-height: 31px;
+    letter-spacing: -0.025em;
+    color: #FFFFFF;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.connect{
-    margin-top: 26px;
-    margin-left: 383px;
-    background: linear-gradient(97.86deg, #89C6FF -38.38%, #3633D0 71.88%);
-    border-radius: 30px;
+.navbar__button{
+    margin-left: 283px;
     width: 168px;
     height: 39px;
+}
+
+.button{
+    background: linear-gradient(97.86deg, #89C6FF -38.38%, #3633D0 71.88%);
+    border-radius: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.connect-wallet{
+.button__text{
     text-decoration: none;
     color: #ffffff;
     font-family: 'Roboco';
@@ -92,16 +177,16 @@
     font-weight: 400;
 }
 
-.main{
+
+.hero{
     display: flex;
 }
 
-.main-title{
+.title{
     margin-top: 104px;
-    margin-left: 80px;
 }
 
-.main-title-text{
+.title__text{
     color:#ffffff;
     font-family: 'Inter';
     font-style: normal;
@@ -112,15 +197,14 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.super{
+.title__decoration{
     background-image: linear-gradient( 90deg, #ff8d8d 1%, #F7FC0E 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
 
-.main-text{
+.subtitle{
     margin-top: 28px;
-    margin-left: 80px;
 }
 
 .text{
@@ -137,88 +221,57 @@
     margin-top: 38px;
 }
 
-.link-explore{
+.link__explore{
     width: 173px;
     height: 55px;
-    background: linear-gradient(97.86deg, #89C6FF -38.38%, #3633D0 71.88%);
-    border-radius: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
-.main-link-explore{
-    text-decoration: none;
-    color:#ffffff;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 19.2px;
-    line-height: 23px;
-}
-
-.link-sell{
+.link__sell{
     margin-left: 28px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 32px;
-    gap: 10px;
-    box-sizing: border-box;
     width: 137px;
     height: 55px;
-    border-radius: 30px;
-    background: linear-gradient(97.86deg, #89C6FF -38.38%, #3633D0 71.88%);
 }
 
-.main-link-sell{
-    color:#ffffff;
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 19.2px;
-    line-height: 23px;
+.image{
+    width: 362.05px;
+    height: 397.99px;
 }
 
-.img1{
+.first-image{
     margin-top: 160px;
     margin-left: 90px;
     position: absolute;
-    width: 362.05px;
-    height: 397.99px;
     border-radius: 10px;
 }
 
-.img2{
+.second-image{
     box-sizing: border-box;
-    width: 372.93px;
-    height: 423.78px;
     margin-top: 140px;
     margin-left: 140.41px;
 }
 
-.img3{
+.third-image{
     position: relative;
     box-sizing: border-box;
-    width: 372.93px;
-    height: 423.78px;
     margin-top: -420px;
     margin-left: 180px;
     z-index: -1;
 }
 
-.rectangle{
-    margin-left: 7px;
-    margin-top: -100px;
+.substrate{
     position: absolute;
-    width: 600.43px;
-    height: 124.71px;
     background: rgba(255, 255, 255, 0.1) #ffffff;
     backdrop-filter: blur(29.6924px);
     border-radius: 7.42311px;
-    display: flex;
     border-color: #ffffff;
+}
+
+.hero__substrate{
+    margin-left: 7px;
+    margin-top: -100px;
+    width: 600.43px;
+    height: 124.71px;
+    display: flex;
 }
 
 .metamask{
@@ -247,25 +300,13 @@
 
 .trending-this-week{
     margin-top: 120px;
-    margin-left: 76px;
     display: flex;
 }
 
-.trending-title{
+.trending-this-week__subtitle{
+    width: 603px;
+    height: 81px;
     color:#ffffff;
-    margin-top: 120px;
-    margin-left: 76px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 59.0024px;
-    line-height: 76px;
-    letter-spacing: 0.005em;
-}
-
-.trending-text{
-    color:#ffffff;
-    margin-top: 131px;
     margin-left: 89px;
     font-family: 'GT Walsheim Pro';
     font-style: normal;
@@ -276,9 +317,15 @@
     opacity: 0.5;
 }
 
-.group49{
+.column{
+    margin-top: 90px;
+    margin-left: 99px;
+    margin-right: 99px;
     display: flex;
-    margin-left: 253px;
+}
+
+/* .group49{
+    display: flex;
 }
 
 .group27-1-1{
@@ -430,7 +477,7 @@
     font-weight: 500;
     font-size: 19.2px;
     line-height: 23px;
-}
+} */
 
 .marketplace-title{
     margin-top: 200px;
