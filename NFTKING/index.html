@@ -10,27 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Playfair+Display&display=swap"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <title>NFTHERO</title>
 </head>
-<!--navbar-->
-<navbar class="navbar">
-    <div class="link-container">
-        <a href="/" class="link-container__text">Marketplace</a>
-        <a href="/" class="link-container__text">Creators</a>
-        <a href="/" class="link-container__text">Community</a>
-    </div>
-    <a href="" class="logo">NFTKING</a>
-    <div class="navbar__button button">
-        <a href="" class="button__text">Connect Wallet</a>
-    </div>
-</navbar>
-<body class="body ellipse7">  
+<body class="ellipse7">  
+    <!--navbar-->
+    <navbar class="navbar">
+        <div class="link-container">
+            <a href="/" class="link-container__text">Marketplace</a>
+            <a href="/" class="link-container__text">Creators</a>
+            <a href="/" class="link-container__text">Community</a>
+        </div>
+        <a href="" class="logo">NFTKING</a>
+        <div class="navbar__button button">
+            <a href="" class="button__text">Connect Wallet</a>
+        </div>
+    </navbar>
     <!--main-->
     <section class="hero">
-        <div>
-            <div class="title">
-                <h1 class="title__text">
+        <div class="hero__text">
+            <div class="hero__title-container">
+                <h1 class="hero__title">
                     Discover & Collect <span class="title__decoration">Super Rare</span> Digital<br>Artworks
                 </h1>
             </div>
@@ -46,11 +46,11 @@
                 </ul>
             </div>
         </div>
-        <div>
+        <div class="hero__img">
             <div>
-                <img src="/img/image 13.png" alt="" class="image first-image">
-                <img src="/img/unsplash_3MAmj1ZKSZA.png" alt="" class="image second-image">
-                <img src="/img/unsplash_3MAmj1ZKSZA (1).png" alt="" class="image third-image">
+                <img src="/img/image 13.png" alt="" width="362" class="image first-image">
+                <img src="/img/unsplash_3MAmj1ZKSZA.png" alt="" width="362" class="image second-image">
+                <img src="/img/unsplash_3MAmj1ZKSZA (1).png" alt="" width="362" class="image third-image">
             </div>
             <div class="hero__substrate substrate">
                 <a href="" class="metamask">METAMASK</a>
@@ -61,302 +61,310 @@
     </section>
     <!--Trending this week-->
     <div >
-        <div class="trending-this-week">
-            <h2 class="title__text">
+        <div class="trending-conteiner">
+            <h2 class="title trending-conteiner__title">
                 Trending This Week
             </h2>
-            <p class="trending-this-week__subtitle">
+            <p class="trending-conteiner__subtitle">
                 Various kinds of Artwork categories that are trending this
                 week. The trend will be reset every week. Don’t miss out
                 on the best artworks every week
             </p>
         </div>
-        <ul class="column">
+        <ul class="trending-card-conteiner column">
             <li> 
-                <div>
-                    <li>
-                        <img src="img/Rectangle 22 (1).png" alt="">
-                        <div class="">
-                            <div>
-                                <h3 class="">Miles Grogosters</h3>
-                                <p class="">@rominolegs</p>
-                                <p class="">4.99 ETH</p>
+                <ul>
+                    <li class="card-position">
+                        <img src="img/Rectangle 22 (1).png"  alt="" width="448" class="card-position__image">
+                        <div class="substrate trending-card">
+                            <div class="card__text">
+                                <h3 class="card__author">Miles Grogosters</h3>
+                                <p class="card__nickname">@rominolegs</p>
+                                <p class="card__price">4.99 ETH</p>
                             </div>
-                            <div class="">
-                                <a href="" class="">Collect Now</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/Rectangle 22 (3).png" alt="" class="">
-                        <div class="">
-                            <div>
-                                <h3 class="">Miles Grogosters</h3>
-                                <p class="">@senjadisini</p>
-                                <p class="">4.20 ETH</p>
-                            </div>
-                            <div class="">
-                                <a href="" class="">Collect Now</a>
+                            <div class="button button-position">
+                                <a href="" class="button__text">Collect Now</a>
                             </div>
                         </div>
                     </li>
-                </div>  
+                    <li class="card-position">
+                        <img src="img/Rectangle 22 (2).png" alt="" width="448" class="card-position__image">
+                        <div class="substrate trending-card">
+                            <div class="card__text">
+                                <h3 class="card__author">Reox Fancxy</h3>
+                                <p class="card__nickname">@hibnastiar</p>
+                                <p class="card__price">3.27 ETH</p>
+                            </div>
+                            <div class="button button-position">
+                                <a href="" class="button__text">Collect Now</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </li>
             <li>
-                <div class="column">
-                    <li>
-                        <img src="img/Rectangle 22 (2).png" alt="" class="">
-                        <div class="">
-                            <div>
-                                <h3 class="">Reox Fancxy</h3>
-                                <p class="">@hibnastiar</p>
-                                <p class="">3.27 ETH</p>
+                <ul>
+                    <li class="card-position">
+                        <img src="img/Rectangle 22 (3).png" alt="" width="448" class="card-position__image">
+                        <div class="substrate trending-card">
+                            <div class="card__text">
+                                <h3 class="card__author">Miles Grogosters</h3>
+                                <p class="card__nickname">@senjadisini</p>
+                                <p class="card__price">4.20 ETH</p>
                             </div>
-                            <div class="">
-                                <a href="" class="">Collect Now</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/Rectangle 22.png" alt="" class="">
-                        <div class="">
-                            <div>
-                                <h3 class="">Tuinz Rey</h3>
-                                <p class="">@albertov</p>
-                                <p class="">2.99 ETH</p>
-                            </div>
-                            <div class="">
-                                <a href="" class="">Collect Now</a>
+                            <div class="button button-position">
+                                <a href="" class="button__text">Collect Now</a>
                             </div>
                         </div>
                     </li>
-                </div>
+                    <li class="card-position">
+                        <img src="img/Rectangle 22.png" alt="" width="448" class="card-position__image">
+                        <div class="substrate trending-card">
+                            <div class="card__text">
+                                <h3 class="card__author">Tuinz Rey</h3>
+                                <p class="card__nickname">@albertov</p>
+                                <p class="card__price">2.99 ETH</p>
+                            </div>
+                            <div class="button button-position">
+                                <a href="" class="button__text">Collect Now</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </li>
-        </ul>
+        </ul> 
     </div>
     <!--Explore Marketplace-->
-    <div>
-        <h3 class="marketplace-title">Explore Marketplace</h3>
-        <ul class="group33">
-            <li class="marketplace-link">
-                <div class="marketplace-link-border"><a href="/" class="marketplace-link-text">Collectibles</a></div>
+    <div class="marketplace">
+        <h3 class="marketplace__title title">Explore Marketplace</h3>
+        <ul class="column">
+            <li class="button-animation">
+                <div class="button-animation__border"><a href="/" class="button__text">Collectibles</a></div>
             </li>
-            <li class="marketplace-link">
-                <div class="marketplace-link-border"><a href="/" class="marketplace-link-text">Art</a></div>
+            <li class="button-animation marketplace__button">
+                <div class="button-animation__border"><a href="/" class="button__text">Art</a></div>
             </li>
-            <li class="marketplace-link">
-                <div class="marketplace-link-border"><a href="/" class="marketplace-link-text">Gaming</a></div>
+            <li class="button-animation marketplace__button">
+                <div class="button-animation__border"><a href="/" class="button__text">Gaming</a></div>
             </li>
-            <li class="marketplace-link">
-                <div class="marketplace-link-border"><a href="/" class="marketplace-link-text">Sports</a></div>
+            <li class="button-animation marketplace__button">
+                <div class="button-animation__border"><a href="/" class="button__text">Sports</a></div>
             </li>
-            <li class="marketplace-link">
-                <div class="marketplace-link-border"><a href="/" class="marketplace-link-text">Photography</a></div>
+            <li class="button-animation marketplace__button">
+                <div class="button-animation__border"><a href="/" class="button__text">Photography</a></div>
             </li>
-            <li class="marketplace-link">
-                <div class="marketplace-link-border"><a href="/" class="marketplace-link-text">Music</a></div>
+            <li class="button-animation marketplace__button">
+                <div class="button-animation__border"><a href="/" class="button__text">Music</a></div>
             </li>
-            <li class="marketplace-link">
-                <div class="marketplace-link-border"><a href="/" class="marketplace-link-text">Virtual Worlds</a></div>
+            <li class="button-animation marketplace__button">
+                <div class="button-animation__border"><a href="/" class="button__text">Virtual Worlds</a></div>
             </li>
-            <li class="marketplace-link">
-                <div class="marketplace-link-border"><a href="/" class="marketplace-link-text">Trading Cards</a></div>
-            </li>
-        </ul>
-        <ul class="group43">
-            <li>
-                <li class="card">
-                    <div class="card-rectangle"><img src="/img/Rectangle 65.png" alt="" class="card-rectangle-img"></div>
-                    <div class="group31">
-                        <div>
-                            <h3 class="marketplace-card-title">Inception</h3>
-                            <h3 class="marketplace-card-nickname">@loidonsaf</h3>
-                        </div>
-                        <div class="marketplace-card-price-background1">
-                            <p class="marketplace-card-price">0.8 ETH</p>
-                        </div>
-                        <div class="marketplace-card-button">
-                            <a href="" class="marketplace-img-button">Collect Now</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="card-rectangle"><img src="img/Rectangle 65 (1).png" alt="" class="card-rectangle-img"></div>
-                    <div class="group31">
-                        <div>
-                            <h3 class="marketplace-card-title">Metamorph</h3>
-                            <h3 class="marketplace-card-nickname">@reaflu</h3>
-                        </div>
-                        <div class="marketplace-card-price-background2">
-                            <p class="marketplace-card-price">1.0 ETH</p>
-                        </div>
-                        <div class="marketplace-card-button">
-                            <a href="" class="marketplace-img-button">Collect Now</a>
-                        </div>
-                    </div>
-                </li>
-            </li>
-            <li>
-                <liclass="card">
-                    <div class="card-rectangle"><img src="img/Rectangle 65 (2).png" alt="" class="card-rectangle-img"></div>
-                    <div class="group31">
-                        <div>
-                            <h3 class="marketplace-card-title">Sink Love</h3>
-                            <h3 class="marketplace-card-nickname">@hibnastiar</h3>
-                        </div>
-                        <div class="marketplace-card-price-background4">
-                            <p class="marketplace-card-price">1.4 ETH</p>
-                        </div>
-                        <div class="marketplace-card-button">
-                            <a href="" class="marketplace-img-button">Collect Now</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="card-rectangle"><img src="img/Rectangle 65 (3).png" alt="" class="card-rectangle-img"></div>
-                    <div class="group31">
-                        <div>
-                            <h3 class="marketplace-card-title">Castel Sand</h3>
-                            <h3 class="marketplace-card-nickname">@zinksu</h3>
-                        </div>
-                        <div class="marketplace-card-price-background4">
-                            <p class="marketplace-card-price">0.7 ETH</p>
-                        </div>
-                        <div class="marketplace-card-button">
-                            <a href="" class="marketplace-img-button">Collect Now</a>
-                        </div>
-                    </div>
-                </li>
-            </li>
-            <li>
-                <li class="card">
-                    <div class="card-rectangle"><img src="/img/Rectangle 65 (4).png" alt="" class="card-rectangle-img"></div>
-                    <div class="group31">
-                        <div>
-                            <h3 class="marketplace-card-title">Moonshine</h3>
-                            <h3 class="marketplace-card-nickname">@rere2880</h3>
-                        </div>
-                        <div class="marketplace-card-price-background5">
-                            <p class="marketplace-card-price">0.5 ETH</p>
-                        </div>
-                        <div class="marketplace-card-button">
-                            <a href="" class="marketplace-img-button">Collect Now</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="card">
-                    <div class="card-rectangle"><img src="img/Rectangle 65 (5).png" alt="" class="card-rectangle-img"></div>
-                    <div class="group31">
-                        <div>
-                            <h3 class="marketplace-card-title">Nuckle</h3>
-                            <h3 class="marketplace-card-nickname">@zoldick</h3>
-                        </div>
-                        <div class="marketplace-card-price-background6">
-                            <p class="marketplace-card-price">1.3 ETH</p>
-                        </div>
-                        <div class="marketplace-card-button">
-                            <a href="" class="marketplace-img-button">Collect Now</a>
-                        </div>
-                    </div>
-                </li>
-            </li>
-            <li>
-                <div class="card">
-                    <div class="card-rectangle"><img src="img/Rectangle 65 (6).png" alt="" class="card-rectangle-img"></div>
-                    <div class="group31">
-                        <div>
-                            <h3 class="marketplace-card-title">Petition</h3>
-                            <h3 class="marketplace-card-nickname">@downhill</h3>
-                        </div>
-                        <div class="marketplace-card-price-background7">
-                            <p class="marketplace-card-price">1.3 ETH</p>
-                        </div>
-                        <div class="marketplace-card-button">
-                            <a href="" class="marketplace-img-button">Collect Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-rectangle"><img src="img/Rectangle 65 (7).png" alt="" class="card-rectangle-img"></div>
-                    <div class="group31">
-                        <div>
-                            <h3 class="marketplace-card-title">Incublast</h3>
-                            <h3 class="marketplace-card-nickname">@mikeyobstain</h3>
-                        </div>
-                        <div class="marketplace-card-price-background7">
-                            <p class="marketplace-card-price">1.1 ETH</p>
-                        </div>
-                        <div class="marketplace-card-button">
-                            <a href="" class="marketplace-img-button">Collect Now</a>
-                        </div>
-                    </div>
-                </div>
+            <li class="button-animation marketplace__button">
+                <div class="button-animation__border"><a href="/" class="button__text">Trading Cards</a></div>
             </li>
         </ul>
-        <div class="marketplace-view-more"><div class="marketplace-view-more-bored"><a href="" class="marketplace-view-more-text">View More</a></div></div>
-    </div>
+        <ul class="column">
+            <li>
+                <ul>
+                    <li class="marcketplace__card">
+                        <img src="/img/Rectangle 65.png" alt="" width="276" class="card__image">
+                        <div class="column card__rectangle">
+                            <div class="card__text">
+                                <h3 class="card__author">Inception</h3>
+                                <h3 class="card__nickname">@loidonsaf</h3>
+                            </div>
+                            <div >
+                                <p class="card__price">0.8 ETH</p>
+                            </div>
+                        </div>
+                        <div class="button marcketplace__button">
+                            <a href="" class="button__text">Collect Now</a>
+                        </div>
+                    </li>
+                    <li class="marcketplace__card ">
+                        <img src="img/Rectangle 65 (1).png" alt="" width="276" class="card__image">
+                        <div class="column card__rectangle">
+                            <div class="card__text">
+                                <h3 class="card__author">Metamorph</h3>
+                                <h3 class="card__nickname">@reaflu</h3>
+                            </div>
+                            <div >
+                                <p class="card__price">1.0 ETH</p>
+                            </div>
+                        </div>
+                        <div class="button marcketplace__button">
+                            <a href="" class="button__text">Collect Now</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="marcketplace__card">
+                        <img src="img/Rectangle 65 (2).png" alt="" width="276" class="card__image">
+                        <div class="column card__rectangle">
+                            <div class="card__text">
+                                <h3 class="card__author">Sink Love</h3>
+                                <h3 class="card__nickname">@hibnastiar</h3>
+                            </div>
+                            <div >
+                                <p class="card__price">1.4 ETH</p>
+                            </div>
+                        </div>
+                        <div class="button marcketplace__button">
+                            <a href="" class="button__text">Collect Now</a>
+                        </div>
+                    </li>
+                    <li class="marcketplace__card">
+                        <img src="img/Rectangle 65 (3).png" alt="" width="276" class="card__image">
+                        <div class="column card__rectangle">
+                            <div class="card__text">
+                                <h3 class="card__author">Castel Sand</h3>
+                                <h3 class="card__nickname">@zinksu</h3>
+                            </div>
+                            <div >
+                                <p class="card__price">0.7 ETH</p>
+                            </div>
+                        </div>
+                        <div class="button marcketplace__button">
+                            <a href="" class="button__text">Collect Now</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="marcketplace__card">
+                        <img src="/img/Rectangle 65 (4).png" alt="" width="276" class="card__image">
+                        <div class="column card__rectangle">
+                            <div class="card__text">
+                                <h3 class="card__author">Moonshine</h3>
+                                <h3 class="card__nickname">@rere2880</h3>
+                            </div>
+                            <div>
+                                <p class="card__price">0.5 ETH</p>
+                            </div>
+                        </div>
+                        <div class="button marcketplace__button">
+                            <a href="" class="button__text">Collect Now</a>
+                        </div>
+                    </li>
+                    <li class="marcketplace__card">
+                        <img src="img/Rectangle 65 (5).png" alt="" width="276" class="card__image">
+                        <div class="column card__rectangle">
+                            <div class="card__text">
+                                <h3 class="card__author">Nuckle</h3>
+                                <h3 class="card__nickname">@zoldick</h3>
+                            </div>
+                            <div >
+                                <p class="card__price">1.3 ETH</p>
+                            </div>
+                        </div>
+                        <div class="button marcketplace__button">
+                            <a href="" class="button__text">Collect Now</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li class="marcketplace__card">
+                        <img src="img/Rectangle 65 (6).png" alt="" width="276" class="card__image">
+                        <div class="column card__rectangle">
+                            <div class="card__text">
+                                <h3 class="card__author">Petition</h3>
+                                <h3 class="card__nickname">@downhill</h3>
+                            </div>
+                            <div >
+                                <p class="card__price">1.3 ETH</p>
+                            </div>
+                        </div>
+                        <div class="button marcketplace__button">
+                            <a href="" class="button__text">Collect Now</a>
+                        </div>
+                    </li>
+                    <li class="marcketplace__card">
+                        <img src="img/Rectangle 65 (7).png" alt="" width="276" class="card__image">
+                        <div class="column card__rectangle">
+                            <div class="card__text">
+                                <h3 class="card__author">Incublast</h3>
+                                <h3 class="card__nickname">@mikeyobstain</h3>
+                            </div>
+                            <div >
+                                <p class="card__price">1.1 ETH</p>
+                            </div>
+                        </div>
+                        <div class="button marcketplace__button">
+                            <a href="" class="button__text">Collect Now</a>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul> 
+        <div class="button-animation button-view-more"><div class="button-animation__border"><a href="" class="button__text">View More</a></div></div>
+    </div> 
     <!--Top list creator-->
-    <div class="top-list-creator">
-        <h2 class="top-list-creator-title">Top List Creator</h2>
-        <ul class="top-list-creator-link">
-            <li class="top-list-creator-link-popular">
-                <a href="" class="top-list-creator-popular-link-text">Popular</a>
+    <div class="creator">
+        <h2 class="creator__title title">Top List Creator</h2>
+        <ul class="column creator__button">
+            <li class="button-animation button__popular">
+                <div class="button-animation__border"><a href="" class="button__text">Popular</a></div>
             </li>
-            <li class="top-list-creator-link-following">
-                <div class="top-list-creator-link-following-bored"><a href="" class="top-list-creator-following-text">Following</a></div>
+            <li class="button-animation">
+                <div class="button-animation__border"><a href="" class="button__text">Following</a></div>
             </li>
         </ul>
-        <ul class="card-creator">
-            <li class="card1">
-                <div class="top-list-card-img"><img src="img/Rectangle 73.png" alt=""></div>
-                <div class="top-list-card-ellipce"><img src="/img/Ellipse 7.png" alt="" class="top-list-card-ellipce-img"></div>
-                <div>
-                    <div class="group13">
-                        <h3 class="top-list-card-title">Hibnastiar</h3>
-                        <span class="top-list-card-price">27.3K </span><span class="artwork">Artwork</span>
-                    </div>
-                    <div class="button-followed">
-                        <div class="button-followed-bored"><a href="" class="button-followed-text">Followed</a></div>
+        <ul class="column">
+            <li class="creator__card">
+                <div class="creator__work"><img src="img/Rectangle 73.png" alt=""></div>
+                <div class="creator__img-container"><img src="/img/Ellipse 7.png" alt="" class="creator__img"></div>
+                <div class="creator__substrate">
+                    <div class="creator__text">
+                        <h3 class="card__author">Hibnastiar</h3>
+                        <span class="card__price">27.3K<span class="card__artwork">Artwork</span></span>
                     </div>
                 </div>
-            </li>
-            <li class="card2">
-                <div class="top-list-card-img"><img src="img/Rectangle 73 (1).png" alt=""></div>
-                <div class="top-list-card-ellipce"><img src="img/Ellipse 7 (1).png" alt="" class="top-list-card-ellipce-img"></div>
-                <div>
-                    <div class="group13">
-                        <h3 class="top-list-card-title">Tukirin</h3>
-                        <span class="top-list-card-price">21.6K </span><span class="artwork">Artwork</span>
-                    </div>
-                    <div class="button-followed">
-                        <div class="button-followed-bored"><a href="" class="button-followed-text">Followed</a></div>
-                    </div>
+                <div class="button-followed">
+                    <div class="button-followed__border"><a href="" class="button__text">Followed</a></div>
                 </div>
             </li>
-            <li class="card2">
-                <div class="top-list-card-img"><img src="img/Rectangle 73 (2).png" alt=""></div>
-                <div class="top-list-card-ellipce"><img src="img/Ellipse 7 (2).png" alt="" class="top-list-card-ellipce-img"></div>
-                <div>
-                    <div class="group13">
-                        <h3 class="top-list-card-title">Aksaraz</h3>
-                        <span class="top-list-card-price">14.0K </span><span class="artwork">Artwork</span>
-                    </div>
-                    <div class="button-followed">
-                        <div class="button-followed-bored"><a href="" class="button-followed-text">Followed</a></div>
+            <li class="creator__card">
+                <div class="creator__work"><img src="img/Rectangle 73 (1).png" alt=""></div>
+                <div class="creator__img-container"><img src="img/Ellipse 7 (1).png" alt="" class="creator__img"></div>
+                <div class="creator__substrate">
+                    <div class="creator__text">
+                        <h3 class="card__author">Tukirin</h3>
+                        <span class="card__price">21.6K<span class="card__artwork">Artwork</span></span>
                     </div>
                 </div>
+                <div class="button-followed">
+                    <div class="button-followed__border"><a href="" class="button__text">Followed</a></div>
+                </div>
             </li>
-            <li class="card2">
-                <div class="top-list-card-img"><img src="img/Rectangle 73 (3).png" alt=""></div>
-                <div class="top-list-card-ellipce"><img src="img/Ellipse 7 (3).png" alt="" class="top-list-card-ellipce-img"></div>
-                <div>
-                    <div class="group13">
-                        <h3 class="top-list-card-title">Yuk Jum</h3>
-                        <span class="top-list-card-price">11.9K </span><span class="artwork">Artwork</span>
+            <li class="creator__card">
+                <div class="creator__work"><img src="img/Rectangle 73 (2).png" alt=""></div>
+                <div class="creator__img-container"><img src="img/Ellipse 7 (2).png" alt="" class="creator__img"></div>
+                <div class="creator__substrate">
+                    <div class="creator__text">
+                        <h3 class="card__author">Aksaraz</h3>
+                        <span class="card__price">14.0K<span class="card__artwork">Artwork</span></span>
                     </div>
-                    <div class="button-followed">
-                        <div class="button-followed-bored"><a href="" class="button-followed-text">Followed</a></div>
+                </div>
+                <div class="button-followed">
+                    <div class="button-followed__border"><a href="" class="button__text">Followed</a></div>
+                </div>
+            </li>
+            <li class="creator__card">
+                <div class="creator__work"><img src="img/Rectangle 73 (3).png" alt=""></div>
+                <div class="creator__img-container"><img src="img/Ellipse 7 (3).png" alt="" class="creator__img"></div>
+                <div class="creator__substrate">
+                    <div class="creator__text">
+                        <h3 class="card__author">Yuk Jum</h3>
+                        <span class="card__price">11.9<span class="card__artwork">Artwork</span></span>
                     </div>
+                </div>
+                <div class="button-followed">
+                    <div class="button-followed__border"><a href="" class="button__text">Followed</a></div>
                 </div>
             </li>
         </ul>       
@@ -369,15 +377,15 @@
     </div>
     <!--Footer-->
     <footer>
-        <div>
-            <div class="group37">
-                <div class="group35">
-                    <em class="footer-title">Never miss a drop!</em>
-                    <p class="footer-text">Subscribe to super-exclusive drop list and be the first to know about upcoming drops</p>
-                </div>
-                <div class="group36">
+        <div class="footer__substrate">
+            <div class="footer__text">
+                <em class="title">Never miss a drop!</em>
+                <p class="footer__subtitle">Subscribe to super-exclusive drop list and be the first to know about upcoming drops</p>
+                <div class="email-container">
                     <input type="email" placeholder="Enter your email address" class="placeholder-text">
-                    <input type="submit" value="Subscribe" class="subscribe">
+                    <div class="button subscribe-button">
+                        <a href="" class="button__text">Subscribe</a>
+                    </div>
                 </div>
             </div>
         </div>
