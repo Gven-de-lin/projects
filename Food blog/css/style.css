@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-inner{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.carousel-item{
+    transition: 1s;
+}
+
+.card:hover .card-img-top{
+ z-index: 0;
+}
+
+.card:hover .card-body{
+    margin-top: -190px;
+    transition: 0.4s;
+    opacity: 0.95;
+    background-color: coral;
+    z-index: 1;
+}
+
+.catalogy__img{
+    border-radius: 20px;
+}
+
+.col{
+    max-width: 400px;
+}
+
+.btn-catalogy{
+    width: 210px;
+    height: 45px;
+    margin-top: -270px;
+    margin-left: 70px;
+    background-color: #ffffff;
+    border-radius: 37px;
+    font-size: larger;
+    font-style:inherit;
+}
+
+.btn-catalogy:hover{
+    background-color: coral;
+}
