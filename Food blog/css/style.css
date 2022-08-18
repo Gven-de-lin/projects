@@ -77,3 +77,52 @@ img {
 .btn-catalogy:hover{
     background-color: coral;
 }
+
+.btn-style{
+    font-family: 'Quicksand';
+    font-size: 1.25rem;
+}
+
+.logo{
+    text-align: center!important;
+}
+
+.logo__text{
+    text-decoration: none;
+    font-family: 'Shadows Into Light Two';
+    font-size: 60px;
+    color: #232d37;
+}
+
+.logo__text:hover{
+    color: #232d37;
+}
+
+.link-position{
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.nav-text{
+    font-family: 'Poppins';
+    line-height: 1.5;
+    color: #212529;
+}
+
+.navbar__position{
+    align-content: center;
+}
+
+.social-link{
+    color: #212529;
+    margin-right: 20px;
+    transition: 0.25s ease-in-out;
+}
+
+.social-link:hover{
+    color: coral;
+}
+
+.container__social-link{
+    margin-top: 10px;
+}
